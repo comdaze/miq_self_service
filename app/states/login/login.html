@@ -1,0 +1,52 @@
+<div class="login-pf">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 id="brand" ng-bind-html="vm.text.brand"></h1><!--/#brand-->
+      </div>
+      <!--/.col-*-->
+      <div class="col-sm-8 col-md-6 col-lg-5 login">
+        <form class="form-horizontal" role="form" ng-submit="vm.onSubmit()">
+          <pf-notification-list></pf-notification-list>
+          <div class="form-group">
+            <label for="inputUsername" class="col-sm-2 col-md-2 control-label">用户名</label>
+
+            <div class="col-sm-10 col-md-10">
+              <input type="text" ng-model="vm.credentials.login" class="form-control" id="inputUsername">
+            </div>
+          </div>
+          <!--/.form-group-*-->
+          <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 col-md-2 control-label">密码</label>
+
+            <div class="col-sm-10 col-md-10">
+              <input type="password" ng-model="vm.credentials.password" class="form-control" id="inputPassword">
+            </div>
+          </div>
+          <!--/.form-group-*-->
+          <div class="form-group">
+            <div class="col-xs-8 col-sm-offset-2 col-sm-6 col-md-offset-2 col-md-6">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" tabindex="3"> 记录用户名
+                </label>
+              </div>
+              <span class="help-block"> 忘记 <a href="#" tabindex="5">用户名</a> 或 <a href="#" tabindex="6">密码</a>?</span>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 submit">
+              <button type="submit" class="btn btn-primary btn-lg" tabindex="4">登 录</button>
+            </div>
+          </div>
+          <!--/.form-group-*-->
+        </form>
+      </div>
+      <!--/.col-*-->
+      <div class="col-sm-5 col-md-6 col-lg-7 details">
+        <p ng-bind-html="vm.text.message"></p>
+      </div>
+      <!--/.col-*-->
+    </div>
+    <!--/.row-*-->
+  </div>
+  <!--/.container-*-->
+</div><!--/.login-page-*-->

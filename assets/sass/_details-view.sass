@@ -1,0 +1,95 @@
++block(ss-details-wrapper)
+  background: $app-color-white
+  height: calc(100vh - 98px)
+  overflow-y: auto
+  overflow-x: hidden
+  border-top: 1px solid #ddd
+
+  .data-list-pf
+    border-top: 1px solid #f2f2f2
+    margin-top: 20px
+
+    .list-group-item
+      cursor: default
+
+      .fa-power-off
+        color: $app-color-red
+
+      .fa-pause
+        color: $app-color-orange
+
+
++block(ss-details-header)
+  border-bottom: 1px solid $app-color-light-gray-6
+  margin-bottom: 20px
+
+  +element(title-img)
+    background: $app-color-white
+    border: 2px solid $app-color-medium-blue
+    border-radius: 100px
+    cursor: pointer
+    float: left
+    height: 130px
+    margin: 10px 20px 20px 0
+    padding: 10px
+    text-align: center
+    width: 130px
+    overflow: hidden
+    white-space: nowrap
+
+    +element(logo)
+      display: inline-block
+      max-height: 80px
+      max-width: 100px
+      position: relative
+      left: -2px
+
+    +element(center)
+      display: inline-block
+      height: 100%
+      vertical-align: middle
+    
+  +element(title)
+    margin-left: 150px
+    padding-bottom: 20px
+
+    h2
+      margin-top: 10px
+
+    h4
+      color: #666
+      line-height: 20px
+
+  +element(actions)
+    text-align: right
+    margin-top: 10px
+    margin-right: -10px
+    float: right
+
+    .btn
+      margin-right: 2px
+
+.ss-form-readonly
+  .form-control
+    border: none
+    background: transparent
+    color: #333
+
+  .form-group
+    margin-bottom: 10px  
+
+    .control-label
+      padding-right: 0
+
+.ss-details-section
+  padding: 10px
+
+  h2
+    margin-top: 0
+
+.ss-details-panel
+  margin-bottom: 0
+  border-top: 0
+  border-right: 0
+  border-left: 0  
+
